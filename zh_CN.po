@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0-20240126\n"
+"Project-Id-Version: Odoo Server 17.0+e-20231113\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 10:12+0000\n"
-"PO-Revision-Date: 2024-03-22 17:01+0800\n"
+"POT-Creation-Date: 2024-04-26 13:55+0000\n"
+"PO-Revision-Date: 2024-04-26 22:37+0800\n"
 "Last-Translator: 老天@odoo123.com\n"
 "Language-Team: 开源之家\n"
 "Language: zh_CN\n"
@@ -15,18 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_rule.py:0
 #, python-format
 msgid "%s is a read-only user. So you can not make any changes in the system!"
-msgstr "%s 是只读账户。所以你啥也改不了！"
+msgstr "%s 是只读用户。所以你不能在系统中进行任何更改！"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
-msgid "<span class=\"o_stat_text\"> Access Rules</span>"
-msgstr "<span class=\"o_stat_text\"> 访问规则</span>"
+msgid "<span class=\"o_stat_text\">Access Rules</span>"
+msgstr "<span class=\"o_stat_text\">访问规则</span>"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
@@ -34,7 +35,7 @@ msgid ""
 "<span style=\"font-weight: bold;\" class=\"text-danger\">Deactivate Rule</"
 "span>"
 msgstr ""
-"<span style=\"font-weight: bold;\" class=\"text-danger\">禁用规则</span>"
+"<span style=\"font-weight: bold;\" class=\"text-danger\">停用规则</span>"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
@@ -43,6 +44,11 @@ msgid ""
 "span>"
 msgstr ""
 "<span style=\"font-weight: bold;\" class=\"text-success\">激活规则</span>"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_ir_model__abstract
+msgid "Abstract"
+msgstr "摘要"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_access_domain_ah
@@ -54,6 +60,7 @@ msgstr "权限范围"
 #: model:ir.actions.act_window,name:simplify_access_management.action_access_management_ah
 #: model:ir.model,name:simplify_access_management.model_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__access_management_id
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__access_management_id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__access_management_id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__access_management_id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__access_management_id
@@ -67,7 +74,7 @@ msgstr "权限管理"
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_res_users__access_management_ids
 msgid "Access Pack"
-msgstr ""
+msgstr "捆绑访问"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__total_rules
@@ -83,7 +90,7 @@ msgstr "权限设计器"
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__action_id
 #: model:ir.model.fields.selection,name:simplify_access_management.selection__store_model_nodes__button_type__action
 msgid "Action"
-msgstr "执行"
+msgstr "操作"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_action_data
@@ -93,24 +100,25 @@ msgstr "数据动作"
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_ir_actions_actions
 msgid "Actions"
-msgstr "执行"
+msgstr "动作"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__active
 msgid "Active"
-msgstr "启用"
+msgstr "激活"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/access_management.py:0
 #: code:addons/simplify_access_management/models/res_users.py:0
 #, python-format
 msgid "Admin user can not be set as a read-only..!"
-msgstr "超级管理员账户不准设为只读啊。。！"
+msgstr "Admin 是超级管理员故无法设为只读哦..!"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_search_view
 msgid "All"
-msgstr "全部"
+msgstr "所有"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__apply_domain
@@ -118,6 +126,7 @@ msgid "Apply Filter"
 msgstr "应用筛选"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/access_management.py:0
 #, python-format
 msgid "Archive"
@@ -126,7 +135,7 @@ msgstr "归档"
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_search_view
 msgid "Archived"
-msgstr "归档"
+msgstr "已激活"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__attribute_name
@@ -138,12 +147,12 @@ msgstr "属性名称"
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__attribute_string
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__attribute_string
 msgid "Attribute String"
-msgstr "字符串属性"
+msgstr "属性字符串"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_base
 msgid "Base"
-msgstr ""
+msgstr "基础"
 
 #. module: simplify_access_management
 #: model:ir.model.fields.selection,name:simplify_access_management.selection__store_model_nodes__node_option__button
@@ -162,25 +171,39 @@ msgid "Button/Tab Access"
 msgstr "按钮/页签权限"
 
 #. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__hide_chatter
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
+msgid "Chatter"
+msgstr "图表"
+
+#. module: simplify_access_management
+#: model:ir.model,name:simplify_access_management.model_hide_chatter
+msgid "Chatter Rights"
+msgstr "图表权限"
+
+#. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/models.py:0
 #, python-format
 msgid ""
 "Check Applied Rule on Access Management:\n"
 " %(access_name)s"
 msgstr ""
-"请检查应用的访问权限规则：:\n"
+"请检查应用的访问管理规则:\n"
 " %(access_name)s"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__company_ids
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_search_view
 msgid "Companies"
 msgstr "公司"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid "Contact your administrator to request access if necessary."
-msgstr "如有必要，可与管理员申请访问权限。"
+msgstr "如有必要，请与管理员联系申请访问权限。"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__create_right
@@ -196,34 +219,33 @@ msgstr "创建者"
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__create_uid
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__create_uid
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__create_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_view_data__create_uid
 msgid "Created by"
-msgstr "创建者"
+msgstr "创建人"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__create_date
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__create_date
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__create_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_view_data__create_date
 msgid "Created on"
-msgstr "创建于"
-
-#. module: simplify_access_management
-#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
-msgid "Deactivated"
-msgstr "已禁用"
+msgstr "创建时间"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__delete_right
@@ -236,12 +258,19 @@ msgid "Disable Developer Mode"
 msgstr "禁用开发者模式"
 
 #. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__disable_login
+msgid "Disable Login"
+msgstr "禁用登陆"
+
+#. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__display_name
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__display_name
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__display_name
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__display_name
@@ -255,16 +284,18 @@ msgid "Domain Access"
 msgstr "域权限"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/models.py:0
 #, python-format
 msgid ""
 "Due to access management rule,\n"
 "You are not allowed to create records from (%(document_model)s) model."
 msgstr ""
-"由于访问管理规则,\n"
-"不允许从 (%(document_model)s) 模型创建记录。"
+"因访问管理规则,\n"
+"不允许你从 (%(document_model)s) 模型创建记录。"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/models.py:0
 #, python-format
 msgid ""
@@ -272,10 +303,11 @@ msgid ""
 "You are not allowed to delete record '%(record)s' from (%(document_model)s) "
 "model."
 msgstr ""
-"由于访问管理规则,\n"
-"不允许从 (%(document_model)s) 模型中删除记录 '%(record)s' 。"
+"因访问管理规则,\n"
+"不允许你从 (%(document_model)s) 模型中删除记录 '%(record)s' 。"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/models.py:0
 #, python-format
 msgid ""
@@ -283,16 +315,18 @@ msgid ""
 "You are not allowed to edit record '%(record)s' from (%(document_model)s) "
 "model."
 msgstr ""
-"由于访问管理规则,\n"
-"不允许编辑 (%(document_model)s) 模型中的记录 '%(record)s' 。"
+"因访问管理规则,\n"
+"不允许你从 (%(document_model)s) 模型中编辑记录 '%(record)s' 。"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/access_management.py:0
 #, python-format
 msgid "Duplicate"
 msgstr "重复"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/access_management.py:0
 #, python-format
 msgid "Export"
@@ -306,7 +340,12 @@ msgstr "字段"
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid "Field Access"
-msgstr "字段访问"
+msgstr "字段权限"
+
+#. module: simplify_access_management
+#: model:ir.model,name:simplify_access_management.model_ir_model_fields
+msgid "Fields"
+msgstr "字段"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_hide_field
@@ -320,9 +359,14 @@ msgid "Filter"
 msgstr "筛选"
 
 #. module: simplify_access_management
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
+msgid "Global"
+msgstr "全局"
+
+#. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_search_view
 msgid "Group By"
-msgstr "分组依据"
+msgstr "分组"
 
 #. module: simplify_access_management
 #: model:ir.model.fields.selection,name:simplify_access_management.selection__store_filters_groups__node_option__group
@@ -335,9 +379,14 @@ msgid "Hide Actions"
 msgstr "隐藏动作"
 
 #. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_add_property
+msgid "Hide Add Property"
+msgstr "隐藏添加属性"
+
+#. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__restrict_archive_unarchive
 msgid "Hide Archive/Unarchive"
-msgstr "隐藏归档/取消归档"
+msgstr "隐藏归档/解档"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__btn_store_model_nodes_ids
@@ -346,6 +395,8 @@ msgstr "隐藏按钮"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_chatter
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_chatter_ids
+#: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__restrict_chatter
 msgid "Hide Chatter"
 msgstr "隐藏图表"
 
@@ -370,6 +421,7 @@ msgid "Hide Edit"
 msgstr "隐藏编辑"
 
 #. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_export
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__restrict_export
 msgid "Hide Export"
 msgstr "隐藏导出"
@@ -382,7 +434,7 @@ msgstr "隐藏字段"
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid "Hide Filter/Group By"
-msgstr "隐藏筛选/分组依据"
+msgstr "隐藏筛选/分组"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__filters_store_model_nodes_ids
@@ -392,22 +444,33 @@ msgstr "隐藏筛选"
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_hide_filters_groups
 msgid "Hide Filters Groups"
-msgstr "隐藏筛选分组"
+msgstr "隐藏筛选/分组"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_filters_groups_ids
 msgid "Hide Filters/Group By"
-msgstr "隐藏筛选/分组依据"
+msgstr "隐藏筛选/分组"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__groups_store_model_nodes_ids
 msgid "Hide Groups"
-msgstr "隐藏群组"
+msgstr "隐藏分组"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_import
+#: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__restrict_import
+msgid "Hide Import"
+msgstr "隐藏导入"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__link_store_model_nodes_ids
 msgid "Hide Kanban Link"
 msgstr "隐藏看板链接"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_log_notes
+msgid "Hide Log Notes"
+msgstr "隐藏日志信息"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_menu_ids
@@ -418,12 +481,28 @@ msgstr "隐藏菜单"
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__report_action_ids
 msgid "Hide Reports"
-msgstr "隐藏报表"
+msgstr "隐藏报告"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_schedule_activity
+msgid "Hide Schedule Activity"
+msgstr "隐藏计划任务"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_send_mail
+msgid "Hide Send Message"
+msgstr "隐藏发送消息"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__hide_spreadsheet
+#: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__restrict_spreadsheet
+msgid "Hide Spreadsheet"
+msgstr "隐藏表单"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__page_store_model_nodes_ids
 msgid "Hide Tab/Page"
-msgstr "隐藏页签/页面"
+msgstr "隐藏标签/页面"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_hide_view_nodes
@@ -433,15 +512,17 @@ msgstr "隐藏视图节点"
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__view_data_ids
 msgid "Hide Views"
-msgstr "隐藏查看"
+msgstr "隐藏视图"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__id
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__id
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__id
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__id
@@ -450,31 +531,49 @@ msgid "ID"
 msgstr "ID"
 
 #. module: simplify_access_management
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
+msgid "Import & Export"
+msgstr "导入 & 导出"
+
+#. module: simplify_access_management
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
+msgid ""
+"In this tab you can apply the rule for every model.\n"
+"                                    <br/>\n"
+"                                    <br/>You can hide chatter, send message, "
+"log notes, schedule activities, import,\n"
+"                                    export from everywhere with single "
+"chabox\n"
+"                                    <br/>\n"
+"                                    <br/>selection for specific user."
+msgstr ""
+"在此选项卡中，您可以将规则应用于每个模型。\n"
+"                                    <br/>\n"
+"                                    <br/>您可以隐藏聊天、发送消息、记录笔记、"
+"安排活动、导入、，\n"
+"                                    使用单个chabox从任何地方导出\n"
+"                                    <br/>\n"
+"                                    <br/>特定用户的选择。"
+
+#. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__invisible
 msgid "Invisible"
 msgstr "不可见"
 
 #. module: simplify_access_management
-#: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_access_management____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_action_data____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_hide_field____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_remove_action____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes____last_update
-#: model:ir.model.fields,field_description:simplify_access_management.field_view_data____last_update
-msgid "Last Modified on"
-msgstr "最后编辑于"
+#: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__lang_code
+msgid "Language Code"
+msgstr "语言编码"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__write_uid
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__write_uid
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__write_uid
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__write_uid
@@ -486,34 +585,52 @@ msgstr "最后更新人"
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_action_data__write_date
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__write_date
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_remove_action__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_filters_groups__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__write_date
 #: model:ir.model.fields,field_description:simplify_access_management.field_view_data__write_date
 msgid "Last Updated on"
-msgstr "最后更新于"
+msgstr "最后更新时间"
 
 #. module: simplify_access_management
 #: model:ir.model.fields.selection,name:simplify_access_management.selection__store_model_nodes__node_option__link
-#, fuzzy
 msgid "Link"
 msgstr "链接"
 
 #. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__hide_log_notes
+msgid "Log Notes"
+msgstr "日志信息"
+
+#. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_ir_ui_menu
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__name
 msgid "Menu"
 msgstr "菜单"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid "Menu Access Right"
-msgstr "菜单访问权限"
+msgstr "菜单权限"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_menu_item__menu_id
+msgid "Menu ID"
+msgstr "菜单ID"
+
+#. module: simplify_access_management
+#: model:ir.model,name:simplify_access_management.model_menu_item
+msgid "Menu Item"
+msgstr "菜单项"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__model_id
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__model_id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__model_id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_filters_groups__model_id
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_view_nodes__model_id
@@ -537,6 +654,11 @@ msgid "Model Name"
 msgstr "模型名称"
 
 #. module: simplify_access_management
+#: model:ir.model,name:simplify_access_management.model_ir_model
+msgid "Models"
+msgstr "模型"
+
+#. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_remove_action
 msgid "Models Right"
 msgstr "模型权限"
@@ -555,6 +677,7 @@ msgid "Name"
 msgstr "名称"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid "No group currently allows this operation."
@@ -572,6 +695,11 @@ msgid "Object"
 msgstr "对象"
 
 #. module: simplify_access_management
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
+msgid "Others"
+msgstr "其他"
+
+#. module: simplify_access_management
 #: model:ir.model.fields.selection,name:simplify_access_management.selection__store_model_nodes__node_option__page
 msgid "Page"
 msgstr "页面"
@@ -579,7 +707,7 @@ msgstr "页面"
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__read_right
 msgid "Read"
-msgstr "读"
+msgstr "读取"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__readonly
@@ -601,37 +729,42 @@ msgstr "移除动作"
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__external_link
 msgid "Remove External Link"
-msgstr "删除外部链接"
+msgstr "移除扩展链接"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_hide_field__required
 msgid "Required"
-msgstr ""
+msgstr "必填"
 
 #. module: simplify_access_management
-#: model:ir.model.fields,field_description:simplify_access_management.field_access_management__self_model_ids
-msgid "Self Model"
-msgstr "自身模型"
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__hide_schedule_activity
+msgid "Schedule Activity"
+msgstr "计划任务"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__self_module_menu_ids
 msgid "Self Module Menu"
-msgstr "自身模型菜单"
+msgstr "子模型菜单"
+
+#. module: simplify_access_management
+#: model:ir.model.fields,field_description:simplify_access_management.field_hide_chatter__hide_send_mail
+msgid "Send Message"
+msgstr "发送信息"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_store_model_nodes__is_smart_button
 msgid "Smart Button"
-msgstr "超级按钮"
+msgstr "智能按钮"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_store_filters_groups
 msgid "Store Filters Groups"
-msgstr "存储筛选组"
+msgstr "保存筛选群组"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_store_model_nodes
 msgid "Store Model Nodes"
-msgstr "存储模型节点"
+msgstr "保存模型节点"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_view_data__techname
@@ -641,26 +774,36 @@ msgstr "技术名称"
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid ""
-"The menu or submenu added on above list will be hidden from the defined "
-"user(s).<br/><br/>  More Info :"
+"The menu or submenu added on above list\n"
+"                                    will be hidden from the defined "
+"user(s).\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    More Info :"
 msgstr ""
-"添加到上述列表中的菜单或子菜单将对定义的用户隐藏。<br/><br/>  更多信息 :"
+"在上面列表中添加的菜单或子菜单\n"
+"                                    将对定义的用户隐藏。\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    更多信息 :"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid ""
 "This operation is allowed for the following groups:\n"
 "%(groups_list)s"
 msgstr ""
-"以下组允许执行此操作:\n"
+"以下组允许执行此操作：\n"
 "%(groups_list)s"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/access_management.py:0
 #, python-format
 msgid "Unarchive"
-msgstr "取消归档"
+msgstr "解档"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
@@ -669,19 +812,24 @@ msgstr "更新"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_res_users
+msgid "User"
+msgstr "用户"
+
+#. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_management__user_ids
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_search_view
 msgid "Users"
 msgstr "用户"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_ir_ui_view
 msgid "View"
-msgstr "查看"
+msgstr "视图"
 
 #. module: simplify_access_management
 #: model:ir.model,name:simplify_access_management.model_view_data
 msgid "View Data"
-msgstr "查看数据"
+msgstr "视图数据"
 
 #. module: simplify_access_management
 #: model:ir.model.fields,field_description:simplify_access_management.field_access_domain_ah__write_right
@@ -689,6 +837,7 @@ msgid "Write"
 msgstr "写入"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid ""
@@ -697,6 +846,7 @@ msgid ""
 msgstr "不允许访问 '%(document_kind)s' (%(document_model)s) 记录。"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid ""
@@ -705,6 +855,7 @@ msgid ""
 msgstr "不允许创建 '%(document_kind)s' (%(document_model)s) 记录。"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid ""
@@ -713,6 +864,7 @@ msgid ""
 msgstr "不允许删除 '%(document_kind)s' (%(document_model)s) 记录。"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/models/ir_model_access.py:0
 #, python-format
 msgid ""
@@ -724,107 +876,195 @@ msgstr "不允许编辑 '%(document_kind)s' (%(document_model)s) 记录。"
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid ""
 "You can Hide any field of any model, Turn any field to Read-Only or Set any "
-"field as Required for the specified user(s) from here.\n"
-"                                    <br/><br/>  More Info :"
+"field as\n"
+"                                    Required for the specified user(s) from "
+"here.\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    More Info :"
 msgstr ""
-"您可以从此处隐藏任何模型的任何字段、将任何字段变为只读或将任何字段设置为指定"
-"用户的必需字段。\n"
-"                                    <br/><br/>  更多信息 :"
+"您可以隐藏任何模型的任何字段、将任何字段转为只读或将任何字段设置为\n"
+"                                    从此处指定的用户需要。\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    更多信息 :"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid ""
 "You can Hide reports, Hide action buttons like Create, Edit, Export, Hide "
-"Views (list, kanban, report, etc), Also hide some actions like Archive, "
-"Delete, Duplicate, etc from defined user(s).\n"
-"                                    <br/><br/>Note: the restriction added "
-"here will only become hidden for defined users. They can still be accessed "
-"by python code or API, so it won't intruppet the process in some cases like "
-"from POS and API. If you strictly want to block the Create, Edit, Delete "
-"process entirely from the user, you can use the 'Domain Access' Tab of the "
-"form and deine the rule there.\n"
-"                                    <br/><br/>  More Info :"
+"Views\n"
+"                                    (list, kanban, report, etc), Also hide "
+"some actions like Archive, Delete, Duplicate,\n"
+"                                    etc from defined user(s).\n"
+"                                    <br/>\n"
+"                                    <br/>Note: the restriction added here "
+"will only become hidden for defined users.\n"
+"                                    They can still be accessed by python "
+"code or API, so it won't intruppet the process\n"
+"                                    in some cases like from POS and API. If "
+"you strictly want to block the Create, Edit,\n"
+"                                    Delete process entirely from the user, "
+"you can use the 'Domain Access' Tab of the\n"
+"                                    form and deine the rule there.\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    More Info :"
 msgstr ""
-"您可以隐藏报告，隐藏操作按钮，如创建、编辑、导出、隐藏视图（列表、看板、报告"
-"等），还可以从定义的用户隐藏一些操作，如存档、删除、复制等。\n"
-"                                    <br/><br/>注意：此处添加的限制仅对已定义"
-"的用户隐藏。它们仍然可以通过python代码或API访问，因此在某些情况下，如从POS和"
-"API，它不会干扰进程。如果您严格希望完全阻止用户执行“创建、编辑、删除”过程，您"
-"可以使用表单的“域访问”选项卡并在那里取消规则。\n"
-"                                    <br/><br/>  更多信息 :"
+"您可以来自定义的用户一切，例如隐藏报告，隐藏操作按钮，如创建、编辑、导出、隐"
+"藏视图\n"
+"                                    （列表、看板、报告等），还隐藏一些操作，"
+"如存档、删除、复制\n"
+"                                    等等。\n"
+"                                    <br/>\n"
+"                                    <br/>注意：此处添加的限制仅对已定义的用户"
+"隐藏。\n"
+"                                    它们仍然可以通过python代码或API访问，因此"
+"不会干扰进程\n"
+"                                    在某些情况下，例如来自POS和API。如果您严"
+"格想要阻止创建、编辑、\n"
+"                                    完全从用户中删除进程，您可以使用的“域访"
+"问”选项卡\n"
+"                                    在那里形成和分解规则。\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    更多信息 :"
+
+#. module: simplify_access_management
+#: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
+msgid ""
+"You can hide Chatter and Buttons of Chatter for any model for specified user "
+"from\n"
+"                                    this tab.\n"
+"                                    <br/>\n"
+"                                    <br/>Here Button of Chatter means 'Send "
+"message', 'Log note', 'Activities'."
+msgstr ""
+"您可以从中隐藏指定用户的任何模型的图表和图表的按钮\n"
+"                                    本标签页签。\n"
+"                                    <br/>\n"
+"                                    <br/>这里聊天按钮的意思是“发送消息”、“记"
+"录笔记”、“活动”。"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid ""
 "You can hide access of Filters and Group By of any model for specified user "
-"from this tab.\n"
-"                                    <br/><br/>Here Filters means any Filters "
+"from\n"
+"                                    this tab.\n"
+"                                    <br/>\n"
+"                                    <br/>Here Filters means any Filters "
 "visible on List/Tree view.\n"
-"                                    <br/><br/>Group By means any Group By "
-"visible on List/Tree view."
+"                                    <br/>\n"
+"                                    <br/>Group By means any Group By visible "
+"on List/Tree view."
 msgstr ""
-"您可以从此选项卡中隐藏指定用户对任何模型的“过滤器”和“分组依据”的访问。\n"
-"                                    <br/><br/>这里的过滤器是指在列表/树视图中"
-"可见的任何过滤器。\n"
-"                                    <br/><br/>分组依据是指在列表/树状视图中可"
-"见的任何分组依据。"
+"您可以隐藏对指定用户的任何模型的筛选器和分组依据的访问\n"
+"                                    此选项卡。\n"
+"                                    <br/>\n"
+"                                    <br/>这里的过滤器是指在列表/树视图中可见"
+"的任何过滤器。\n"
+"                                    <br/>\n"
+"                                    <br/>“分组依据”是指在“列表”/“树状图”视图"
+"中可见的任何分组依据。"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid ""
 "You can hide access of action buttons, object buttons, tabs and links (in "
-"kanban box) of any model for specified user from this tab.\n"
-"                                    <br/><br/>Here Button means any action "
-"button visible on any view.\n"
-"                                    <br/><br/>Page means any tab visible on "
-"any form view.\n"
-"                                    <br/><br/>And Link means any action link "
+"kanban\n"
+"                                    box) of any model for specified user "
+"from this tab.\n"
+"                                    <br/>\n"
+"                                    <br/>Here Button means any action button "
+"visible on any view.\n"
+"                                    <br/>\n"
+"                                    <br/>Page means any tab visible on any "
+"form view.\n"
+"                                    <br/>\n"
+"                                    <br/>And Link means any action link "
 "visible on Kanban view.\n"
-"                                    <br/><br/>More Info :"
+"                                    <br/>\n"
+"                                    <br/>More Info :"
 msgstr ""
-"您可以通过此选项卡隐藏指定用户对任何模型的操作按钮、对象按钮、选项卡和链接"
-"（在看板框中）的访问。\n"
-"                                    <br/><br/>此处按钮表示在任何视图上可见的"
-"任何操作按钮。\n"
-"                                    <br/><br/>页面是指在任何表单视图中可见的"
-"任何选项卡。\n"
-"                                    <br/><br/>链接是指看板视图中可见的任何动"
-"作链接。\n"
-"                                    <br/><br/>更多信息 :"
+"您可以隐藏对操作按钮、对象按钮、选项卡和链接的访问（在看板中\n"
+"                                    选框）。\n"
+"                                    <br/>\n"
+"                                    <br/>此处按钮表示在任何视图上可见的任何操"
+"作按钮。\n"
+"                                    <br/>\n"
+"                                    <br/>页面是指在任何表单视图中可见的任何选"
+"项卡。\n"
+"                                    <br/>\n"
+"                                    <br/>链接是指看板视图中可见的任何动作链"
+"接。\n"
+"                                    <br/>\n"
+"                                    <br/>更多信息 :"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid ""
 "You can set strict access rights of the model(read, write, delete, update) "
-"and set the domain to access the model's records for any user and from one "
-"place. The access defined here will either allow or block the entire access "
-"from the specified user(s), not only from the system, but also from the code "
-"and API. So be careful while defining the accesses here. If you just want to "
-"hide the Create, Edit and Delete buttons from the backend user for sales "
-"order but want to allow them to use POS, then defining access here will "
-"genereate the error on POS side. To prevent that, you can use the 'Model "
-"Access' tab to Hide the Create, Edit and Delete buttons.\n"
-"                                    <br/><br/>You can allow the Read (View), "
-"Write (Create), Delete, Update (Edit) rights by just checking the check-"
-"boxes of respective actions, and to restrict them of those rights, don't "
-"check any of those checkboxes. And also this tab gives you advance "
-"configurator to allow those rights for your user on specific conditions, to "
-"set that condition check 'Apply Filter' checkbox.\n"
-"                                    <br/><br/>More Info :"
+"and set\n"
+"                                    the domain to access the model's records "
+"for any user and from one place. The access\n"
+"                                    defined here will either allow or block "
+"the entire access from the specified\n"
+"                                    user(s), not only from the system, but "
+"also from the code and API. So be careful\n"
+"                                    while defining the accesses here. If you "
+"just want to hide the Create, Edit and\n"
+"                                    Delete buttons from the backend user for "
+"sales order but want to allow them to use\n"
+"                                    POS, then defining access here will "
+"genereate the error on POS side. To prevent\n"
+"                                    that, you can use the 'Model Access' tab "
+"to Hide the Create, Edit and Delete\n"
+"                                    buttons.\n"
+"                                    <br/>\n"
+"                                    <br/>You can allow the Read (View), "
+"Write (Create), Delete, Update (Edit) rights by\n"
+"                                    just checking the check-boxes of "
+"respective actions, and to restrict them of those\n"
+"                                    rights, don't check any of those "
+"checkboxes. And also this tab gives you advance\n"
+"                                    configurator to allow those rights for "
+"your user on specific conditions, to set that\n"
+"                                    condition check 'Apply Filter' "
+"checkbox.\n"
+"                                    <br/>\n"
+"                                    <br/>More Info :"
 msgstr ""
-"您可以设置模型的严格访问权限（读取、写入、删除、更新），并设置域以从一个位置"
-"访问任何用户的模型记录。这里定义的访问将允许或阻止来自指定用户的整个访问，不"
-"仅来自系统，还来自代码和API。因此，在这里定义访问时要小心。如果您只想对销售订"
-"单的后端用户隐藏“创建”、“编辑”和“删除”按钮，但希望允许他们使用POS，那么在此处"
-"定义访问权限将在POS端产生错误。为了防止这种情况发生，可以使用“模型访问”选项卡"
-"隐藏“创建”、“编辑”和“删除”按钮。\n"
-"                                    <br/><br/>Y您只需选中相应操作的复选框即可"
-"允许读取（查看）、写入（创建）、删除、更新（编辑）权限，而要限制这些权限，请"
-"不要选中任何复选框。此外，此选项卡还为您提供了高级配置程序，允许您的用户在特"
-"定条件下拥有这些权限，并设置条件复选框“应用筛选器”。\n"
-"                                    <br/><br/>更多信息 :"
+"您可以设置模型的严格访问权限（读、写、删除、更新）并设置\n"
+"                                    从一个地方访问任何用户的模型记录的域。访"
+"问\n"
+"                                    此处定义的将允许或阻止指定的\n"
+"                                    用户，不仅来自系统，还来自代码和API。所以"
+"要小心\n"
+"                                    同时在此定义访问。如果您只想隐藏创建、编"
+"辑和\n"
+"                                    从销售订单的后端用户中删除按钮，但希望允"
+"许它们使用\n"
+"                                    POS，则在此处定义访问将在POS侧生成错误。"
+"防止\n"
+"                                    即，可以使用“模型访问”选项卡隐藏“创"
+"建”、“编辑”和“删除”\n"
+"                                    按钮。\n"
+"                                    <br/>\n"
+"                                    <br/>您可以通过允许读取（查看）、写入（创"
+"建）、删除、更新（编辑）权限\n"
+"                                    只需选中相应操作的复选框，并限制这些操"
+"作\n"
+"                                    权利，不要勾选任何一个复选框。此外，此选"
+"项卡还为您提供预付款\n"
+"                                    配置程序，允许您的用户在特定条件下拥有这"
+"些权限，以设置\n"
+"                                    条件检查“应用筛选器”复选框。\n"
+"                                    <br/>\n"
+"                                    <br/>更多信息 :"
 
 #. module: simplify_access_management
+#. odoo-python
 #: code:addons/simplify_access_management/controllers/action.py:0
 #, python-format
 msgid ""
@@ -851,20 +1091,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
 msgid "https://www.terabits.xyz/simplify_access_management#bt-pills-menu"
 msgstr ""
-
-#. module: simplify_access_management
-#. openerp-web
-#: code:addons/simplify_access_management/static/src/js/widget/DomainSelector.js:0
-#, python-format
-msgid "not set (false)"
-msgstr "可选 (false)"
-
-#. module: simplify_access_management
-#. openerp-web
-#: code:addons/simplify_access_management/static/src/js/widget/DomainSelector.js:0
-#, python-format
-msgid "set (true)"
-msgstr "设为(true)"
 
 #. module: simplify_access_management
 #: model_terms:ir.ui.view,arch_db:simplify_access_management.access_management_form_view_ah
